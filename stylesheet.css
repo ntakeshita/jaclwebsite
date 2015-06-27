@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.block {
+    margin: 0;
+}
+
+h2 {
+    position: relative;
+    font-family: 'Raleway';
+    letter-spacing: 1px;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    padding: 3%;
+    margin: 0;
+}
+
+.wording {
+    margin: 2%;
+    font-family: 'Source Sans Pro';
+    font-size: 110%;
+}
+
+a.anchor{
+    display: block; 
+    position: relative; 
+    top: -2%; 
+    display: none;
+}
+
+/*** header content ***/
+
+#header {
+    background-color: #6B0000;
+    color: white;
+    padding: 1%;
+}
+
+#logo {
+    height: 10%;
+    width: 10%;
+    max-height: 100px;
+    max-width: 100px;
+    min-height: 25px;
+    min-width: 25px;
+}
+
+#bjacl {
+    padding-left: 1%;
+    top: 6%;
+    font-size: 200%;
+    font-family: 'Josefin Sans', Arial, serif;
+    letter-spacing: 1px;
+}
+
+/*** menu content ***/
+
+#menu_bar {
+    width: 100%;
+    padding: 1%;
+    background-color: #974D4D;
+    text-align: center;
+}
+
+.menu {
+    font-family: 'PT Sans', Arial, serif;
+    font-size: 95%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    letter-spacing: 1px;
+}
+
+.menu > a {
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+}
+
+
+.menu:hover {
+    background-color: #CB7D82;
+}
+
+#menu_bar.fixed {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+
+/*** splash image ***/
+
+#splash_img {
+    width: 100%;
+}
+
+/*** mission ***/
+
+#mission_header {
+    background-color: #465D97;
+}
+
+/*** about ***/
+
+#about_header {
+    background-color: #005C1F;
+}
+
+/*** board ***/
+#board_gallery {
+    margin-left: 6%;
+    padding-bottom: 2%;
+}
+
+#board_header {
+    background-color: #6B4000;
+}
+
+#board_instructions {
+    text-align: center;
+    font-size: 125%;
+}
+
+.board_pic {
+    position: relative;
+    width: 22%;
+    padding: 1%;
+    z-index: 1;
+    float: left;
+}
+
+/*
+.wrapper {
+    width: 25%;
+    float: left;
+    position: relative;
+    padding: 0;
+    display:block;
+}
+
+.description {
+    font-family: 'Raleway';
+    z-index: 4;
+    color: white;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    background-color: rgb(0,0,0,1);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.description:hover {
+    opacity: 1;
+}*/
+
+/*** membership ***/
+
+#membership_header {
+    background-color: #993D3D;
+    clear: both;
+}
+
+#membership_wording {
+    text-align: center;
+}
+
+#membership_button {
+    text-align: center;
+    margin: 1% 0;
+}
+
+#membership_link {
+    text-decoration: None;
+    text-align: center;
+    width: 5%;
+    padding: 1% 3%;
+    background-color: #00E6B8;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 175%;
+}
