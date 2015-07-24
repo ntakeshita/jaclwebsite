@@ -1,3 +1,7 @@
+/** Made by Nolan Takeshita in 2015 for the Berkeley JACL **/
+
+/*** general ***/
+
 body {
     margin: 0;
     width: 100%;
@@ -16,14 +20,14 @@ h2 {
     position: relative;
     font-family: 'Poiret One';
     letter-spacing: 2px;
-    font-size: 2em;
+    font-size: 5vmin;
     margin: 2%;
 }
 
 .wording {
     margin: 2%;
     font-family: 'Source Sans Pro';
-    font-size: 110%;
+    font-size: 3vmin;
 }
 
 /*** header content ***/
@@ -31,13 +35,10 @@ h2 {
 #logo {
     position: fixed;
     z-index: 11;
-    margin-left: 0;
+    top: 0;
+    left: 0;
     padding: .5%;
-    height: 7%;
-    max-height: 100px;
-    max-width: 100px;
-    min-height: 25px;
-    min-width: 25px;
+    height: 6vh;
     float: left;
 }
 
@@ -48,20 +49,22 @@ h2 {
 }
 
 #menu_bar {
+    height: 2.5vh;
+    font-size: 2vmin;
     position: fixed;
     width: 100%;
-    padding: 1.5%;
+    padding: 1.5% 0;
     background-color: #800000;
     text-align: right;
     z-index: 10;
 }
 
 .menu {
+    margin-right: 1vw;
+    padding: 3vh .5vw;
     font-family: 'Raleway';
-    font-size: .9em;
-    padding: 1.5% 1%;
-    letter-spacing: 1px;
-    margin-right: 1.5%;
+    font-size: vh;
+    letter-spacing: .05vw;
 }
 
 .menu > a {
@@ -86,28 +89,26 @@ h2 {
     background-attachment: fixed;
 }
 
-#welcome {
+#splash_welcome {
     background-color: rgba(0,0,0,.5);
     padding: 1%;
     position: absolute;
+    max-height: 50vh;
+    width: 90%;
+    overflow: hidden;
     top: 40%;
     margin: 0 2.5%;
-    font-size: 4em;
     color: white;
     font-family: 'Montserrat';
 }
 
+#welcome {
+    font-size: 10vh;
+    padding-bottom: 1%;
+}
+
 #welcome_supp {
-    background-color: rgba(0,0,0,.5);
-    padding: 1%;
-    width: 90%;
-    position: absolute;
-    font-size: 1em;
-    top: 55%;
-    margin: 0 2.5%;
-    font-size: 2em;
-    color: white;
-    font-family: 'Montserrat';
+    font-size: 5vh;
 }
 
 
@@ -120,21 +121,24 @@ h2 {
 
 /*** about ***/
 
+#about {
+    background-color: #993333;
+    color: white;
+}
 
 /*** board ***/
 
-/*
-#about {
-    background-color: #800000;
-    color: white;
+
+#board_header {
+    text-align: center;
 }
-*/
 
 #splash_board {
     display: block;
     background-image: url("content/board.png");
     background-repeat: no-repeat;
     height: 75vh;
+    width: 100vw;
     background-attachment: fixed;
 }
 
@@ -145,7 +149,6 @@ h2 {
 
 #board_instructions {
     text-align: center;
-    font-size: 125%;
 }
 
 .board_pic {
