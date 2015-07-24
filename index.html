@@ -4,39 +4,52 @@
     <!-- Imports -->
     
     <meta charset="utf-8">
-    <link href='http://fonts.googleapis.com/css?family=Josefin Sans|PT Sans|Raleway|Source Sans Pro:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin Sans|PT Sans|Raleway|Source Sans Pro:300|Poiret One|Montserrat' rel='stylesheet' type='text/css'>
     
     <!-- Stylesheet -->
     
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
     <!-- Javascript/JQuery -->
     
-    <script src="home.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./home.js"></script>
+    <script src="./scripts/stellar.js"></script>
+    
+    <script>
+        $(document).ready(function() {$.stellar();});
+    </script>
     
     <!--              -->
+    
     <title>Berkeley JACL</title>
+    <link rel="icon" type="image/ico" href="./content/logo_transparent.png"/>
 </head>
+
 <body>
-    <section id="header"  class="block">
-        <img id="logo" src="content/logo_transparent.png"> 
-        <span id="bjacl">Berkeley Japanese American Citizens League</span>
-    </section>
+    
+    <img id="logo" src="content/logo_transparent.png">
     <section id="menu_bar" class="block">
             <span id="menu_home" class="menu"><a href="#header">Home</a></span>
             <span id="menu_mission" class="menu"><a href="#mission_header">Mission</a></span>
             <span id="menu_about" class="menu"><a href="#about_header">About</a></span>
             <span id="menu_board" class="menu"><a href="#board_header">Board</a></span>
             <span id="menu_membership" class="menu"><a href="#membership_header">Membership</a></span>
-            <span id="menu_links" class="menu">Links</span>
-            <span id="menu_documents" class="menu">Documents</span>
-            <span id="menu_contact" class="menu">Contact</span>
+            <span id="menu_links" class="menu"><a href="#header">Links</a></span>
+            <span id="menu_documents" class="menu"><a href="#header">Documents</a></span>
+            <span id="menu_contact" class="menu" ><a href="#header">Contact</a></span>
     </section>
-    <section id="splash"><img id="splash_img" src="content/UCBerkeleyCampus.jpg"></section>
+    <div id="splash_berkeley" data-stellar-background-ratio="0.5"></div>
+    <section id="splash_welcome">
+        <div id="welcome">
+        Welcome to the Berkeley JACL
+        </div>
+        <span id="welcome_supp">Founded in 1942, the Berkeley JACL is part of the oldest and largest Asian American civil rights organization in the United States.</span>
+        </section>
     <section id="mission" class="block">
         <h2 id="mission_header">Mission</h2>
-        <div class="wording">The Berkeley Chapter of the JACL is committed to upholding the human and civil rights of all people, strengthening community ties and fostering coalitions with groups who have similar interests. We strive to promote understanding, respect and appreciation of the rich diversity and contributions of all cultures by preserving and advancing the history of Japanese Americans and all other groups in the United States.</div>
+        <div class="wording">The Berkeley Chapter of the JACL is committed to upholding the human and civil rights of all people, strengthening community ties and fostering coalitions with groups who have similar interests. We strive to promote understanding, respect and appreciation of the rich diversity and contributions of all cultures by preserving and advancing the history of Japanese Americans and all other groups in the United States.
+        </div>
     </section>
     <section id="about">
         <h2 id="about_header">About</h2>
@@ -49,6 +62,7 @@ The Berkeley Chapter became beneficiary of an old-time Berkeley Issei Associatio
 Membership has waxed and waned through the years. The beginning goal was 200-300 members. In 1957 Ko Ijichi, as Vice President and Membership Committee chair, set a goal of 500. The following year with vigorous effort, under President Ijichi’s leadership, the chapter reached its high of 487. With so many Nikkei organizations these days, as well as the integration of the community, maintaining a high enrollment has its challenges. Recently, the chapter is making determined efforts to attract the younger Nikkei crowd, especially those at the University level and young professionals. Their energy and outlook add much to the chapter’s well being. Its close proximity to the University of California, Berkeley and other nearby colleges helps. The future of the JACL lies in their hands.
         </div>
     </section>
+    <div id="splash_board" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="400"></div>
     <section id="board" class="block">
         <h2 id="board_header">Board</h2>
         <div class="wording" id="board_instructions">Hover over the board members to learn about them.</div>
@@ -73,11 +87,5 @@ Membership has waxed and waned through the years. The beginning goal was 200-300
             </div>
         </div>
 </section>
-    <section id="membership" class="block">
-        <h2 id="membership_header">Membership</h2>
-        <div class="wording" id="membership_wording">Founded in 1942, the Berkeley JACL is part of the oldest and largest Asian American civil rights organization in the United States. We strive to support the preservation of civil liberties of all Americans and actively participates in effecting positive social change, particularly to the Asian Pacific American community. Join our ranks today!
-        </div>
-        <div id="membership_button"><a id="membership_link" href="https://www.jacl.org/member/">Join</a></div>
-    </section>
     <section id="contact" class="block"></section>
 </body>
