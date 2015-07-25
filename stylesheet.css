@@ -20,14 +20,14 @@ h2 {
     position: relative;
     font-family: 'Poiret One';
     letter-spacing: 2px;
-    font-size: 5vmin;
+    font-size: 125%;
     margin: 2%;
 }
 
 .wording {
     margin: 2%;
     font-family: 'Source Sans Pro';
-    font-size: 3vmin;
+    font-size: 100%;
 }
 
 /*** header content ***/
@@ -37,8 +37,7 @@ h2 {
     z-index: 11;
     top: 0;
     left: 0;
-    padding: .5%;
-    height: 6vh;
+    height: 7.5%;
     float: left;
 }
 
@@ -63,8 +62,8 @@ h2 {
     margin-right: 1vw;
     padding: 3vh .5vw;
     font-family: 'Raleway';
-    font-size: vh;
-    letter-spacing: .05vw;
+    font-size: 100%;
+    letter-spacing: .1%;
 }
 
 .menu > a {
@@ -96,23 +95,28 @@ h2 {
     max-height: 50vh;
     width: 90%;
     overflow: hidden;
-    top: 40%;
+    top: 30vh;
     margin: 0 2.5%;
     color: white;
     font-family: 'Montserrat';
 }
 
 #welcome {
-    font-size: 10vh;
+    font-size: 9vh;
     padding-bottom: 1%;
 }
 
 #welcome_supp {
-    font-size: 5vh;
+    font-size: 4vh;
 }
 
 
 /*** mission ***/
+
+#mission {
+    background-color: #993333;
+    color: white;
+}
 
 #join {
     text-align: center;
@@ -121,7 +125,7 @@ h2 {
 
 /*** about ***/
 
-#about {
+#mission {
     background-color: #993333;
     color: white;
 }
@@ -134,30 +138,91 @@ h2 {
 }
 
 #splash_board {
-    display: block;
-    background-image: url("content/board.png");
+    background-image: url("./content/boardcrop.png");
     background-repeat: no-repeat;
-    height: 75vh;
+    background-size: 100vw auto;
     width: 100vw;
+    min-height: 40vmin;
     background-attachment: fixed;
-}
-
-#board_gallery {
-    margin-left: 6%;
-    padding-bottom: 2%;
 }
 
 #board_instructions {
     text-align: center;
 }
 
-.board_pic {
-    position: relative;
-    width: 22%;
-    padding: 1%;
-    z-index: 1;
-    float: left;
+.gallery_img {
+    display: table-cell;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40vmin;
+    text-align: center;
 }
+
+.gallery_txt {
+    position: relative;
+    color: white;
+    visibility: hidden;
+    top: 1vh;
+    font-size: 125%; 
+    font-family: 'Source Sans Pro';
+}
+
+.gallery_row {
+    margin-left: 1vmin;
+    display: table;
+    width: 100%;
+    border-spacing: 2vmin;
+    table-layout: fixed;
+}
+
+#michael {
+    background-image: url('./content/board-gallery/michael.jpg');
+}
+
+#paul {
+    background-image: url('content/board-gallery/paul.JPG');
+}
+
+#gordon {
+    background-image: url('content/board-gallery/gordon.JPG');
+}
+
+#tak {
+    background-image: url('content/board-gallery/tak.JPG')
+}
+
+#carolyn {
+    background-image: url('./content/board-gallery/carolyn.JPG');
+}
+
+#jim {
+    background-image: url('./content/board-gallery/jim.JPG')
+}
+
+#mark {
+    background-image: url('content/board-gallery/mark.JPG');
+}
+
+#howard {
+    background-image: url('content/board-gallery/howard.JPG');
+}
+
+#vera {
+    background-image: url('content/board-gallery/vera.JPG')
+}
+
+#neal {
+    background-image: url('./content/board-gallery/neal.JPG');
+}
+
+#al {
+    background-image: url('content/board-gallery/al.JPG');
+}
+
+#ron {
+    background-image: url('content/board-gallery/ron.JPG')
+}
+
 
 /*** membership ***/
 
