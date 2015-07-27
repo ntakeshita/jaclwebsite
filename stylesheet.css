@@ -8,10 +8,6 @@ body {
     background-color: #E3E3E3;
 }
 
-.block {
-    margin: 0;
-}
-
 section {
     padding: 1%;
 }
@@ -162,7 +158,7 @@ h2 {
     position: relative;
     color: white;
     visibility: hidden;
-    top: 1vh;
+    top: 40%;
     font-size: 125%; 
     font-family: 'Source Sans Pro';
 }
@@ -180,15 +176,15 @@ h2 {
 }
 
 #paul {
-    background-image: url('content/board-gallery/paul.JPG');
+    background-image: url('./content/board-gallery/paul.JPG');
 }
 
 #gordon {
-    background-image: url('content/board-gallery/gordon.JPG');
+    background-image: url('./content/board-gallery/gordon.JPG');
 }
 
 #tak {
-    background-image: url('content/board-gallery/tak.JPG')
+    background-image: url('./content/board-gallery/tak.JPG')
 }
 
 #carolyn {
@@ -200,15 +196,15 @@ h2 {
 }
 
 #mark {
-    background-image: url('content/board-gallery/mark.JPG');
+    background-image: url('./content/board-gallery/mark.JPG');
 }
 
 #howard {
-    background-image: url('content/board-gallery/howard.JPG');
+    background-image: url('./content/board-gallery/howard.JPG');
 }
 
 #vera {
-    background-image: url('content/board-gallery/vera.JPG')
+    background-image: url('./content/board-gallery/vera.JPG')
 }
 
 #neal {
@@ -216,11 +212,11 @@ h2 {
 }
 
 #al {
-    background-image: url('content/board-gallery/al.JPG');
+    background-image: url('./content/board-gallery/al.JPG');
 }
 
 #ron {
-    background-image: url('content/board-gallery/ron.JPG')
+    background-image: url('./content/board-gallery/ron.JPG')
 }
 
 
@@ -249,4 +245,16 @@ h2 {
     color: white;
     font-size: 175%;
     background-color: #800000;
+}
+
+
+/*** contact ***/
+
+#contact {
+    background-color: #993333;
+    color: white;
+}
+
+#contact_links > a{
+    color: white;
 }
