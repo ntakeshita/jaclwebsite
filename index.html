@@ -9,6 +9,7 @@
     <!-- Stylesheet -->
     
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     
     <!-- Javascript/JQuery -->
     
@@ -16,8 +17,9 @@
     <script src="./home.js"></script>
     <script src="./scripts/stellar.js"></script>
     
+    <!-- Calls Stellar parallax on load -->
     <script>
-        $(document).ready(function() {$.stellar();});
+        $(document).ready(function() {$.stellar(horizontalScrolling: false);});
     </script>
     
     <!--              -->
@@ -27,17 +29,18 @@
 </head>
 
 <body>
-    
-    <img id="logo" src="content/logo_transparent.png">
     <section id="menu_bar">
-            <span id="menu_home" class="menu"><a href="index.html#splash_berkeley">Home</a></span>
-            <span id="menu_mission" class="menu"><a href="index.html#mission_header">Mission</a></span>
-            <span id="menu_about" class="menu"><a href="index.html#about_header">About</a></span>
-            <span id="menu_board" class="menu"><a href="index.html#board_header">Board</a></span>
-            <span id="menu_membership" class="menu"><a href="index.html#membership">Membership</a></span>
-            <span id="menu_links" class="menu"><a href="docs.html">Links</a></span>
-            <span id="menu_documents" class="menu"><a href="docs.html">Documents</a></span>
-            <span id="menu_contact" class="menu" ><a href="index.html#contact">Contact</a></span>
+            <span id="left_menu">
+                <img id="logo" src="content/logo_transparent.png">
+                <span id="bjacl">Berkeley Japanese American Citizens League</span>
+            </span>
+            <span id="menu_home" class="menu"><a class="menu_link"  href="index.html#splash_berkeley">Home</a></span>
+            <span id="menu_mission" class="menu"><a class="menu_link"  href="index.html#mission_anchor">Mission</a></span>
+            <span id="menu_about" class="menu"><a class="menu_link" href="index.html#about_anchor">About</a></span>
+            <span id="menu_board" class="menu"><a class="menu_link"  href="index.html#board_anchor">Board</a></span>
+            <span id="menu_links" class="menu"><a class="menu_link"  href="docs.html">Links</a></span>
+            <span id="menu_documents" class="menu"><a class="menu_link"  href="docs.html">Documents</a></span>
+            <span id="menu_contact" class="menu" ><a class="menu_link"  href="index.html#contact_anchor">Contact</a></span>
     </section>
     <div id="splash_berkeley" data-stellar-background-ratio="0.5"></div>
     <section id="splash_welcome">
@@ -46,11 +49,14 @@
         </div>
         <span id="welcome_supp">Founded in 1942, the Berkeley JACL is part of the oldest and largest Asian American civil rights organization in the United States.</span>
         </section>
+    <span class="anchor" id="mission_anchor"></span>
     <section id="mission" class="block">
         <h2 id="mission_header">Mission</h2>
         <div class="wording">The Berkeley Chapter of the JACL is committed to upholding the human and civil rights of all people, strengthening community ties and fostering coalitions with groups who have similar interests. We strive to promote understanding, respect and appreciation of the rich diversity and contributions of all cultures by preserving and advancing the history of Japanese Americans and all other groups in the United States.
         </div>
     </section>
+    <hr>
+    <span class="anchor" id="about_anchor"></span>
     <section id="about">
         <h2 id="about_header">About</h2>
         <div class="wording">
@@ -63,6 +69,7 @@ Membership has waxed and waned through the years. The beginning goal was 200-300
         </div>
     </section>
     <div id="splash_board" data-stellar-background-ratio="0.5"></div>
+    <span class="anchor" id="board_anchor"></span>
     <section id="board">
         <h2 id="board_header">Board</h2>
         <div class="wording" id="board_instructions">Hover over the board members to learn about them.</div>
@@ -111,15 +118,21 @@ Membership has waxed and waned through the years. The beginning goal was 200-300
             </div>
         </div>
     </section>
+    <hr>
+    <span class="anchor" id="contact_anchor"></span>
     <section id="contact">
-            <h2 id="contact_header">Contact</h2>
-            <div id="membership" class="wording">The JACL is always looking for new members! Click <a href="https://www.jacl.org/member/">HERE</a> to join our ranks today!</div>
-            
-            <div class="wording">To find the latest information about the Berkeley JACL visit our social media at the below links or shoot us an email at: <a href="mailto:berkeleyjacl@gmail.com">berkeleyjacl@gmail.com</a>.</div>
+            <h2 id="contact_header">Contact Us</h2>
+            <div class="wording">
+                We want to hear from you! For any comments or questions, please email us at: <a href="mailto:berkeleyjacl@gmail.com">berkeleyjacl@gmail.com</a>
+                <br><br>
+                The JACL is always looking for new members! To join you can visit <a href="https://jacl.org/member/">https://jacl.org/member/</a> for more information.
+                <br><br>
+                To get the latest information about the Berkeley JACL, please visit our social media below!
+            </div>
             <div class="wording contacts" id="contact_links">
-                <a href="https://www.facebook.com/pages/Berkeley-JACL/559588747415823">Facebook</a><br>
-                <a href="https://twitter.com/berkeleyjacl">Twitter</a><br>
-                <a href="https://www.youtube.com/channel/UC3b6j5fkYa8v_OhpsisRzSQ">Youtube</a>
+                <a href="https://www.facebook.com/pages/Berkeley-JACL/559588747415823"><i class="icon fa fa-facebook fa-3x"></i></a>
+                <a href="https://twitter.com/berkeleyjacl"><i class="icon fa fa-twitter fa-3x"></i></a>
+                <a href="https://www.youtube.com/channel/UC3b6j5fkYa8v_OhpsisRzSQ"><i class="icon fa fa-youtube-play fa-3x"></i></a>
             </div>
     </section>
 </body>

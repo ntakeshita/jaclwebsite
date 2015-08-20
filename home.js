@@ -4,12 +4,14 @@ var heightTop = null,
     menu = null,
     sticky = null,
     imgPath = null,
-    id = null;
+    id = null,
+    stellarActivated = false;
 
 
 $(document).ready(function() {
     menu = $('#menu_bar');
     heightTop = menu.offset().top;
+    menuSizing();
 });
 
 
@@ -28,6 +30,21 @@ $(function() {
             $(this).find("span").css('visibility', 'hidden');
             $(id).css('background-image', imgPath);
             id = imgPath = null;
-        }
-    );
+        });
 });
+
+$(window).resize(function() {
+    $.stellar('refresh');
+    menuSizing();
+});
+
+function menuSizing() {
+    var windowWidth = $(window).width();
+    if (windowWidth < 500) {
+        $('#bjacl').text("");
+    } else if (windowWidth < 1000) {
+        $('#bjacl').text("Berkeley JACL");
+    } else {
+        $('#bjacl').text("Berekley Japanese American Citizens League");
+    }
+}

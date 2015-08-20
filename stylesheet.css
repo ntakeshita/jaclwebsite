@@ -16,7 +16,7 @@ h2 {
     position: relative;
     font-family: 'Poiret One';
     letter-spacing: 2px;
-    font-size: 125%;
+    font-size: 175%;
     margin: 2%;
 }
 
@@ -26,21 +26,43 @@ h2 {
     font-size: 100%;
 }
 
+hr {
+    width: 95vw;
+}
+
+.anchor {
+    display: block;
+    height: 2.5vh;
+    margin-top: -2.5vh;
+    visibility: hidden;
+}
+
+
 /*** header content ***/
 
-#logo {
-    position: fixed;
-    z-index: 11;
+#left_menu {
+    position: absolute;
+    height: 100%;
+    max-height: 75px;
+    min-width: 50%;
+    text-align: left;
     top: 0;
     left: 0;
-    height: 7.5%;
-    float: left;
+}
+
+#logo {
+    position: relative;
+    z-index: 11;
+    height: 100%;
+    left: 0;
 }
 
 #bjacl {
-    position: fixed;
-    z-index: 11;
-    float: left;
+    position: absolute;
+    font-family: 'Raleway';
+    font-size: 100%;
+    color: white;
+    top: 40%;
 }
 
 #menu_bar {
@@ -48,29 +70,30 @@ h2 {
     font-size: 2vmin;
     position: fixed;
     width: 100%;
-    padding: 1.5% 0;
+    height: 1vh;
+    max-height: 75px;
+    padding: 3vh 0;
     background-color: #800000;
     text-align: right;
     z-index: 10;
 }
 
 .menu {
-    margin-right: 1vw;
-    padding: 3vh .5vw;
+    position: relative;
+    height: 100%;
+    padding: 2vh 1vw;
     font-family: 'Raleway';
-    font-size: 100%;
-    letter-spacing: .1%;
+    font-size: 120%;
 }
 
 .menu > a {
     text-decoration: none;
     color: white;
-    padding: 1%;
 }
 
 
-.menu:hover {
-    background-color: #CB7D82;
+.menu:hover .menu_link {
+    color: gray;
 }
 
 /*** splash welcome ***/
@@ -90,7 +113,7 @@ h2 {
     position: absolute;
     max-height: 50vh;
     width: 90%;
-    overflow: hidden;
+    overflow: scroll;
     top: 30vh;
     margin: 0 2.5%;
     color: white;
@@ -98,21 +121,16 @@ h2 {
 }
 
 #welcome {
-    font-size: 9vh;
+    font-size: 300%;
     padding-bottom: 1%;
 }
 
 #welcome_supp {
-    font-size: 4vh;
+    font-size: 200%;
 }
 
 
 /*** mission ***/
-
-#mission {
-    background-color: #993333;
-    color: white;
-}
 
 #join {
     text-align: center;
@@ -121,17 +139,7 @@ h2 {
 
 /*** about ***/
 
-#mission {
-    background-color: #993333;
-    color: white;
-}
-
 /*** board ***/
-
-#board {
-    background-color: #993333;
-    color: white;
-}
 
 #board_header {
     text-align: center;
@@ -141,6 +149,7 @@ h2 {
     background-image: url("./content/boardcrop.png");
     background-repeat: no-repeat;
     background-size: 100vw auto;
+    background-position: auto center;
     width: 100vw;
     min-height: 80vmin;
     background-attachment: fixed;
@@ -154,6 +163,7 @@ h2 {
     display: table-cell;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     height: 40vh;
     text-align: center;
 }
@@ -162,8 +172,10 @@ h2 {
     position: relative;
     color: white;
     visibility: hidden;
+    text-align: center;
     top: 40%;
-    font-size: 125%; 
+    width: 100%;
+    font-size: 120%; 
     font-family: 'Source Sans Pro';
 }
 
@@ -254,11 +266,18 @@ h2 {
 
 /*** contact ***/
 
-#contact {
-    background-color: #993333;
-    color: white;
+.icon {
+    margin-right: 2vw;
 }
 
-#contact_links > a{
-    color: white;
+.fa-facebook {
+    color: #800000;
+}
+
+.fa-twitter {
+    color: #800000;
+}
+
+.fa-youtube-play {
+    color: #800000;
 }
