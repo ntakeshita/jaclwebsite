@@ -28,19 +28,30 @@ h2 {
 
 hr {
     width: 95vw;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 
 .anchor {
-    display: block;
-    height: 2.5vh;
-    margin-top: -2.5vh;
     visibility: hidden;
 }
 
 
 /*** header content ***/
 
-#left_menu {
+#menu_bar {
+    font-size: 2vmin;
+    position: fixed;
+    width: 100%;
+    height: 2vh;
+    max-height: 75px;
+    padding: 3vh 0;
+    background-color: #800000;
+    text-align: right;
+    z-index: 10;
+}
+
+#menu_bar > span {
     position: absolute;
     height: 100%;
     max-height: 75px;
@@ -59,41 +70,80 @@ hr {
 
 #bjacl {
     position: absolute;
-    font-family: 'Raleway';
-    font-size: 100%;
-    color: white;
-    top: 40%;
-}
-
-#menu_bar {
-    height: 2.5vh;
-    font-size: 2vmin;
-    position: fixed;
-    width: 100%;
-    height: 1vh;
-    max-height: 75px;
-    padding: 3vh 0;
-    background-color: #800000;
-    text-align: right;
-    z-index: 10;
-}
-
-.menu {
-    position: relative;
-    height: 100%;
-    padding: 2vh 1vw;
+    top: 35%;
     font-family: 'Raleway';
     font-size: 120%;
-}
-
-.menu > a {
-    text-decoration: none;
     color: white;
 }
 
+#menu {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 100%;
+}
 
-.menu:hover .menu_link {
-    color: gray;
+#menu li {
+    display: inline;
+    vertical-align: center;
+    padding: 3vh 0;
+}
+
+#menu li:hover {
+    background-color: gray;
+}
+
+
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+    padding: 2vh 1vw;
+    font-family: 'Raleway';
+}
+
+#menu_alt_icon {
+    position:absolute;
+    display: none;
+    font-size: 3vh;
+    color: white;
+    right: 2%;
+    top: 35%;
+}
+
+#menu_alt {
+    position: absolute;
+    display: none;
+    list-style-type: none;  
+    padding: 0;
+    text-align: left;   
+    background-color: white;
+    width: 100%;
+    top: 0vh;
+}
+
+
+#menu_alt li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 200%;
+    font-family: 'Raleway';
+    width: inherit;
+    padding: 1% 1%;
+}
+
+#menu_alt li:hover {
+    background-color:gray;
+}
+
+#menu_alt li {
+    border-bottom: 1px solid gray;
+}
+
+#menu_alt li:last-child{
+    border: none;
 }
 
 /*** splash welcome ***/
@@ -233,34 +283,6 @@ hr {
 
 #ron {
     background-image: url('./content/board-gallery/ron.JPG')
-}
-
-
-/*** membership ***/
-
-#membership_header {
-    clear: both;
-}
-
-#membership_wording {
-    text-align: center;
-}
-
-#membership_button {
-    text-align: center;
-    margin: 1% 0;
-}
-
-#membership_link {
-    text-decoration: None;
-    text-align: center;
-    width: 5%;
-    padding: 1% 3%;
-    background-color: #800000;
-    font-family: 'Raleway';
-    color: white;
-    font-size: 175%;
-    background-color: #800000;
 }
 
 

@@ -38,13 +38,40 @@ $(window).resize(function() {
     menuSizing();
 });
 
+$(function() {
+    $('#menu_alt_icon').click(function() {
+        $('#menu_alt').toggle();
+    });
+});
+
+
+// On clicking an element close the menu.
+$(function() {
+    $('.menu_link_alt').click(function() {
+        $('#menu_alt').toggle();
+    });
+});
+
+
+// Resizing function.
 function menuSizing() {
-    var windowWidth = $(window).width();
-    if (windowWidth < 500) {
-        $('#bjacl').text("");
-    } else if (windowWidth < 1000) {
+    var windowWidth = $(window).width(),
+        menuHeight = $('#menu_bar').innerHeight();
+    $('#menu_alt').css('margin-top', menuHeight + 'px');
+    if (windowWidth < 750) {
         $('#bjacl').text("Berkeley JACL");
+        $('#menu_alt_icon').css('display', 'inline');
+        $('#menu').css('display', 'none');
+        $('.gallery_txt').css('font-size', '90%');
+    } else if (windowWidth < 1200) {
+        $('#bjacl').text("Berkeley JACL");
+        $('#menu_alt_icon').css('display', 'none');
+        $('#menu').css('display', 'inline');
+        $('.gallery_txt').css('font-size', '110%');
     } else {
         $('#bjacl').text("Berekley Japanese American Citizens League");
+        $('#menu_alt_icon').css('display', 'none');
+        $('#menu').css('display', 'inline');
+        $('.gallery_txt').css('font-size', '120%');
     }
 }

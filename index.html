@@ -19,7 +19,7 @@
     
     <!-- Calls Stellar parallax on load -->
     <script>
-        $(document).ready(function() {$.stellar(horizontalScrolling: false);});
+        $(document).ready(function() {$.stellar({horizontalScrolling: false,});});
     </script>
     
     <!--              -->
@@ -30,35 +30,46 @@
 
 <body>
     <section id="menu_bar">
-            <span id="left_menu">
+            <span>
                 <img id="logo" src="content/logo_transparent.png">
                 <span id="bjacl">Berkeley Japanese American Citizens League</span>
             </span>
-            <span id="menu_home" class="menu"><a class="menu_link"  href="index.html#splash_berkeley">Home</a></span>
-            <span id="menu_mission" class="menu"><a class="menu_link"  href="index.html#mission_anchor">Mission</a></span>
-            <span id="menu_about" class="menu"><a class="menu_link" href="index.html#about_anchor">About</a></span>
-            <span id="menu_board" class="menu"><a class="menu_link"  href="index.html#board_anchor">Board</a></span>
-            <span id="menu_links" class="menu"><a class="menu_link"  href="docs.html">Links</a></span>
-            <span id="menu_documents" class="menu"><a class="menu_link"  href="docs.html">Documents</a></span>
-            <span id="menu_contact" class="menu" ><a class="menu_link"  href="index.html#contact_anchor">Contact</a></span>
+            <ul id="menu">
+                <li><a href="index.html#splash_berkeley">Home</a></li>
+                <li><a href="index.html#mission_anchor">Mission</a></li>
+                <li><a href="index.html#about_anchor">About</a></li>
+                <li><a href="index.html#board_anchor">Board</a></li>
+                <li><a href="docs.html">Resources</a></li>
+                <li><a href="index.html#contact_anchor">Contact</a></li>
+            </ul>
+        
+            <!-- Small Screen Alternative Dropdown Menu -->
+            <i class="fa fa-bars" id="menu_alt_icon"></i>
+            <ul id="menu_alt">
+                <li class="menu_item"><a href="index.html#splash_berkeley">Home</a></li>
+                <li class="menu_item"><a href="index.html#mission_anchor">Mission</a></li>
+                <li class="menu_item"><a href="index.html#about_anchor">About</a></li>
+                <li class="menu_item"><a href="index.html#board_anchor">Board</a></li>
+                <li class="menu_item"><a href="docs.html">Resources</a></li>
+                <li class="menu_item"><a href="index.html#contact_anchor">Contact</a></li>
+            </ul>
+        
     </section>
     <div id="splash_berkeley" data-stellar-background-ratio="0.5"></div>
     <section id="splash_welcome">
-        <div id="welcome">
-        Welcome to the Berkeley JACL
-        </div>
+        <div id="welcome">Welcome to the Berkeley JACL</div>
         <span id="welcome_supp">Founded in 1942, the Berkeley JACL is part of the oldest and largest Asian American civil rights organization in the United States.</span>
-        </section>
+    </section>
     <span class="anchor" id="mission_anchor"></span>
-    <section id="mission" class="block">
+    <section>
         <h2 id="mission_header">Mission</h2>
         <div class="wording">The Berkeley Chapter of the JACL is committed to upholding the human and civil rights of all people, strengthening community ties and fostering coalitions with groups who have similar interests. We strive to promote understanding, respect and appreciation of the rich diversity and contributions of all cultures by preserving and advancing the history of Japanese Americans and all other groups in the United States.
         </div>
     </section>
     <hr>
     <span class="anchor" id="about_anchor"></span>
-    <section id="about">
-        <h2 id="about_header">About</h2>
+    <section>
+        <h2>About</h2>
         <div class="wording">
             The Berkeley Chapter was organized in early 1942 with Kimio Obata (son of U.C. Art Professor Chiura Obata) as president. WW II and the evacuation of Japanese Americans from the West Coast suspended the chapter's activities. An East Bay Chapter was formed after the war to include Berkeleyans but was split in 1953 into Oakland, Berkeley, and the Contra Costa Chapters. Later the Oakland Chapter was absorbed into the Berkeley Chapter. <br></br>
             Berkeley was fortunate to include the more active East Bay members like Tad Hirota, Masuji Fujii, Frank and Toshi Yamasaki, Albert and Ruth Kosakura, George and Bess Yasukochi, Mas Yonemura, Paul and Kay Yamamoto, and Bill Fujita. They carried on a vigorous community program, which included promotion of Issei citizenship, scholarship awards, open forums on civic issues, benefit movies, picnics, talent shows (one of which included the now famous Pat Morita), and sports team sponsorship.
@@ -70,7 +81,7 @@ Membership has waxed and waned through the years. The beginning goal was 200-300
     </section>
     <div id="splash_board" data-stellar-background-ratio="0.5"></div>
     <span class="anchor" id="board_anchor"></span>
-    <section id="board">
+    <section>
         <h2 id="board_header">Board</h2>
         <div class="wording" id="board_instructions">Hover over the board members to learn about them.</div>
         <div id="board_gallery">
@@ -120,8 +131,8 @@ Membership has waxed and waned through the years. The beginning goal was 200-300
     </section>
     <hr>
     <span class="anchor" id="contact_anchor"></span>
-    <section id="contact">
-            <h2 id="contact_header">Contact Us</h2>
+    <section>
+            <h2>Contact Us</h2>
             <div class="wording">
                 We want to hear from you! For any comments or questions, please email us at: <a href="mailto:berkeleyjacl@gmail.com">berkeleyjacl@gmail.com</a>
                 <br><br>
