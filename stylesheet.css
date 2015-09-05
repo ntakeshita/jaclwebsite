@@ -89,8 +89,8 @@ hr {
     padding: 3vh 0;
 }
 
-#menu li:hover {
-    background-color: gray;
+#menu li:hover a {
+    color: gray;
 }
 
 
