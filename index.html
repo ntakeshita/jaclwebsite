@@ -15,12 +15,6 @@
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./home.js"></script>
-    <script src="./scripts/stellar.js"></script>
-    
-    <!-- Calls Stellar parallax on load -->
-    <script>
-        $(document).ready(function() {$.stellar({horizontalScrolling: false,});});
-    </script>
     
     <!--              -->
     
@@ -32,30 +26,30 @@
     <section id="menu_bar">
             <span>
                 <img id="logo" src="content/logo_transparent.png">
-                <span id="bjacl">Berkeley Japanese American Citizens League</span>
+                <span id="bjacl">Berkeley Chapter - Japanese American Citizens League (JACL)</span>
             </span>
             <ul id="menu">
-                <li><a href="index.html#splash_berkeley">Home</a></li>
-                <li><a href="index.html#mission_anchor">Mission</a></li>
-                <li><a href="index.html#about_anchor">About</a></li>
-                <li><a href="index.html#board_anchor">Board</a></li>
-                <li><a href="docs.html">Resources</a></li>
-                <li><a href="index.html#contact_anchor">Contact</a></li>
+                <li><a href="#splash_berkeley">Home</a></li>
+                <li><a href="#mission_anchor">Mission</a></li>
+                <li><a href="#about_anchor">About</a></li>
+                <li><a href="#board_anchor">Board</a></li>
+                <li><a href="#docs_anchor">Documents</a></li>
+                <li><a href="#contact_anchor">Contact</a></li>
             </ul>
         
             <!-- Small Screen Alternative Dropdown Menu -->
             <i class="fa fa-bars" id="menu_alt_icon"></i>
             <ul id="menu_alt">
-                <li class="menu_item"><a href="index.html#splash_berkeley">Home</a></li>
-                <li class="menu_item"><a href="index.html#mission_anchor">Mission</a></li>
-                <li class="menu_item"><a href="index.html#about_anchor">About</a></li>
-                <li class="menu_item"><a href="index.html#board_anchor">Board</a></li>
-                <li class="menu_item"><a href="docs.html">Resources</a></li>
-                <li class="menu_item"><a href="index.html#contact_anchor">Contact</a></li>
+                <li class="menu_item"><a href="#splash_berkeley">Home</a></li>
+                <li class="menu_item"><a href="#mission_anchor">Mission</a></li>
+                <li class="menu_item"><a href="#about_anchor">About</a></li>
+                <li class="menu_item"><a href="#board_anchor">Board</a></li>
+                <li class="menu_item"><a href="#docs_anchor">Documents</a></li>
+                <li class="menu_item"><a href="#contact_anchor">Contact</a></li>
             </ul>
         
     </section>
-    <div id="splash_berkeley" data-stellar-background-ratio="0.5"></div>
+    <div id="splash_berkeley"></div>
     <section id="splash_welcome">
         <div id="welcome">Welcome to the Berkeley JACL</div>
         <span id="welcome_supp">Founded in 1942, the Berkeley JACL is part of the oldest and largest Asian American civil rights organization in the United States.</span>
@@ -79,7 +73,7 @@ The Berkeley Chapter became beneficiary of an old-time Berkeley Issei Associatio
 Membership has waxed and waned through the years. The beginning goal was 200-300 members. In 1957 Ko Ijichi, as Vice President and Membership Committee chair, set a goal of 500. The following year with vigorous effort, under President Ijichi’s leadership, the chapter reached its high of 487. With so many Nikkei organizations these days, as well as the integration of the community, maintaining a high enrollment has its challenges. Recently, the chapter is making determined efforts to attract the younger Nikkei crowd, especially those at the University level and young professionals. Their energy and outlook add much to the chapter’s well being. Its close proximity to the University of California, Berkeley and other nearby colleges helps. The future of the JACL lies in their hands.
         </div>
     </section>
-    <div id="splash_board" data-stellar-background-ratio="0.5"></div>
+    <div id="splash_board"></div>
     <span class="anchor" id="board_anchor"></span>
     <section>
         <h2 id="board_header">Board</h2>
@@ -130,11 +124,37 @@ Membership has waxed and waned through the years. The beginning goal was 200-300
         </div>
     </section>
     <hr>
+    <section>
+        <span class="anchor" id="docs_anchor"></span>
+        <h2>Documents</h2>
+        <div class='wording'>
+            Find our latest newsletters here on our <a href="https://www.dropbox.com/sh/g2f8b9nbg96uuzj/AADqYuSBYwlO5AGFTYCZ3A5sa?dl=0">Dropbox</a>!<br><br>
+            Our scholarship application can be found <a href="http://berkeleyjacl.org/scholarship.pdf">here</a>!
+            
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h2>Friends of the Berkeley JACL</h2>
+        <div class='wording'>
+            Visit some of our friends!
+            <ul>
+                <li><a href='http://www.jcccnc.org/'>Japanese Cultural Community Center of Northern California</a></li>
+                <li><a href='http://www.pacificcitizen.org/'>Pacific Citizen</a></li>
+                <li><a href='http://www.janm.org/'>Japanese American National Museum</a></li>
+                <li><a href="http://j-sei.org/">J-Sei</a></li>
+                <li><a href="http://www.pacificcitizen.org/">Pacific Citizen</a></li>
+                <li><a href="http://nakayoshi.org">Nakayoshi Young Professionals</a></li>
+                <li><a href="http://nsu.berkeley.edu">Nikkei Student Union at UC Berkeley</a></li>
+            </ul>
+        </div>
+        <hr>
+    </section>
     <span class="anchor" id="contact_anchor"></span>
     <section>
             <h2>Contact Us</h2>
             <div class="wording">
-                We want to hear from you! For any comments or questions, please email us at: <a href="mailto:berkeleyjacl@gmail.com">berkeleyjacl@gmail.com</a>
+                We want to hear from you! For any comments or questions, please email us at: <a href="mailto:berkeleyjacl@gmail.com">berkeleyjacl@gmail.com</a> or send mail to: <br>JACL, P.O Box 7609, Berkeley, CA 94707-0609
                 <br><br>
                 The JACL is always looking for new members! To join you can visit <a href="https://jacl.org/member/">https://jacl.org/member/</a> for more information.
                 <br><br>
@@ -144,6 +164,12 @@ Membership has waxed and waned through the years. The beginning goal was 200-300
                 <a href="https://www.facebook.com/pages/Berkeley-JACL/559588747415823"><i class="icon fa fa-facebook fa-3x"></i></a>
                 <a href="https://twitter.com/berkeleyjacl"><i class="icon fa fa-twitter fa-3x"></i></a>
                 <a href="https://www.youtube.com/channel/UC3b6j5fkYa8v_OhpsisRzSQ"><i class="icon fa fa-youtube-play fa-3x"></i></a>
+            </div>
+            <div class="wording footer">
+                Top Photo Credit: Joe Parks "Berkeley Sunset" - Creative Commons License <a href="https://www.flickr.com/photos/parksjd/9357094656/in/photolist-duZxpK-ffRyfd-nVX4p8-dLttDu-9gzhAu-9gzh9G-9S5qKL-bmBWff-9kSBvS-68a2e3-rK9Zsa-qKag5o-9gghYx-32iYBH-6ckwFu-6nD9Mv-idqtP6-aQF7br-8Y7Qrq-cxTKTE-cDJV7W-8Z7wPo-56rQce-8Xv2nW-5W22r1-fK8SXu-gz3weE-5BkUev-xded2D-dv6wkF-eGgfNS-bCbZcw-bzToA1-c16ZSL-46f2yb-n6zsYj-4QvtA9-4Soznr-5spCRL-4Saro8-7cKcVJ-5bg2EY-eUPd74-xBTxWh-dKA6DM-bCYdnX-6KCpf1-cGQMvJ-ZsQr-4VrAKt
+                    ">Link</a>
+                <br>
+                Last updated on September 21, 2015. Site created and designed by Nolan Takeshita.
             </div>
     </section>
 </body>
