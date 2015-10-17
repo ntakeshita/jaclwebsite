@@ -204,7 +204,7 @@ hr {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: !important cover;
     background-repeat: no-repeat;
 }
 
