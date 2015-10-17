@@ -14,7 +14,7 @@ $(document).ready(function() {
     menuSizing();
     
     // If Android, disable "background-attachment: fixed"
-    if (mobileAndTabletcheck) {
+    if (mobileAndTabletcheck()) {
         $('#splash_berkeley').css('background-attachment', 'scroll');
         $('#splash_board').remove();
     }
