@@ -6,15 +6,20 @@ var heightTop = null,
     imgPath = null,
     id = null,
     stellarActivated = false,
-    mobile = false;
 
 
 $(document).ready(function() {
     menu = $('#menu_bar');
     heightTop = menu.offset().top;
     menuSizing();
+    
+    // If Android, disable "background-attachment: fixed"
+    if (ua.indexOf("android") > -1) {
+        $('#splash_berkeley').css('background-attachment', 'scroll');
+        $('#splash_board').css('background-attachment', 'scroll');
+    }
+    
 });
-
 
 /* Apply a linear gradient and show text field on hover over. */
 $(function() {
@@ -62,18 +67,21 @@ $(function() {
 });
 
 
+
 // Resizing function.
 function menuSizing() {
     var windowWidth = $(window).width(),
         menuHeight = $('#menu_bar').innerHeight();
     $('#menu_alt').css('margin-top', menuHeight + 'px');
     if (windowWidth < 1100) {
+        $('#bjacl').css('top', '20%');
         $('#menu_alt_icon').css('display', 'inline');
         $('#menu').css('display', 'none');
         $('.gallery_txt').css('font-size', '80%');
     } 
     else {
         $('#menu_alt').hide();
+        $('#bjacl').css('top', '20px');
         $('#menu_alt_icon').css('display', 'none');
         $('#menu').css('display', 'inline');
         $('.gallery_txt').css('font-size', '110%');

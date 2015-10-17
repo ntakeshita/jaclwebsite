@@ -33,6 +33,9 @@ hr {
 }
 
 .anchor {
+    display: block;
+    position: relative;
+    top: -50px;
     visibility: hidden;
 }
 
@@ -43,8 +46,7 @@ hr {
     font-size: 2vmin;
     position: fixed;
     width: 100%;
-    height: 2vh;
-    max-height: 75px;
+    height: 20px;
     padding: 3vh 0;
     background-color: #800000;
     text-align: right;
@@ -70,7 +72,7 @@ hr {
 
 #bjacl {
     position: absolute;
-    top: 25%;
+    top: 10px;
     font-family: 'Raleway';
     font-size: 120%;
     color: white;
@@ -147,15 +149,11 @@ hr {
 /*** splash welcome ***/
 
 #splash_berkeley {
-    display: block;
-    background: url("content/berkeley.jpg") no-repeat;
-    webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
+    background: url("../content/berkeley.jpg");
     height: 100vh;
-    width: 100%;
     background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #splash_welcome {
@@ -197,16 +195,12 @@ hr {
 }
 
 #splash_board {
-    background: url('content/board-cropped.jpg') 100% no-repeat;
+    background: url('../content/board-cropped.jpg');
     margin: 0px;
     height: 50vh;
-    display: block;
     background-attachment: fixed;
-    webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    background-position: center center; 
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #board_instructions {
@@ -302,8 +296,11 @@ of photos on hover. */
 
 /*** contact ***/
 
+#icons {
+    text-align: center;
+}
 .icon {
-    margin-right: 3vw;
+    margin-right: 5vw;
 }
 
 .icon:hover {
@@ -329,4 +326,5 @@ of photos on hover. */
 /* Footer */
 .footer {
     font-size: 75%;
+    text-align: center;
 }
