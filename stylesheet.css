@@ -200,9 +200,6 @@ hr {
 
 #splash_board {
     background: url('../content/board-cropped.jpg');
-    margin: 0px;
-    height: 50vh;
-    background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
