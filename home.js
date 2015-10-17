@@ -5,7 +5,8 @@ var heightTop = null,
     sticky = null,
     imgPath = null,
     id = null,
-    stellarActivated = false;
+    stellarActivated = false,
+    mobile = false;
 
 
 $(document).ready(function() {
@@ -32,7 +33,6 @@ $(function() {
             id = imgPath = null;
         });
 });
-
 
 // On clicking the icon show the menu
 $(function() {

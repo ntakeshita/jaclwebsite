@@ -169,12 +169,12 @@ hr {
 }
 
 #welcome {
-    font-size: 300%;
+    font-size: 6.5vh;
     padding-bottom: 1%;
 }
 
 #welcome_supp {
-    font-size: 200%;
+    font-size: 3.5vh;
 }
 
 
@@ -194,12 +194,12 @@ hr {
 }
 
 #splash_board {
-    background: url("./content/boardcrop.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100vw;
+    background: url('content/board-cropped.jpg') 100% no-repeat;
+    margin: 0px;
     height: 50vh;
+    display: block;
     background-attachment: fixed;
+    background-position: center center; 
 }
 
 #board_instructions {
@@ -233,6 +233,10 @@ hr {
     border-spacing: 2vmin;
     table-layout: fixed;
 }
+
+
+/* Note: Multiple IDs used to make compatible with Javascript darkening
+of photos on hover. */
 
 #michael {
     background-image: url('./content/board-gallery/michael.JPG');
@@ -282,6 +286,12 @@ hr {
     background-image: url('./content/board-gallery/ron.JPG')
 }
 
+/*** friends ***/
+
+#jccnc {
+    background-image: url('./content/jcccnc.jpg')
+}
+
 
 /*** contact ***/
 
@@ -305,7 +315,11 @@ hr {
     color: #800000;
 }
 
+.fa-dropbox {
+    color: #800000;
+}
+
 /* Footer */
 .footer {
-    font-size: 80%;
+    font-size: 75%;
 }
