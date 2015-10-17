@@ -149,7 +149,10 @@ hr {
 #splash_berkeley {
     display: block;
     background: url("content/berkeley.jpg") no-repeat;
-    background-size: 100% 100%;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
     height: 100vh;
     width: 100%;
     background-attachment: fixed;
@@ -199,6 +202,10 @@ hr {
     height: 50vh;
     display: block;
     background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
     background-position: center center; 
 }
 
