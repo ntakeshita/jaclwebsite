@@ -154,6 +154,10 @@ hr {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #splash_welcome {
@@ -200,6 +204,10 @@ hr {
     height: 50vh;
     background-attachment: fixed;
     background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
