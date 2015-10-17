@@ -16,7 +16,7 @@ $(document).ready(function() {
     // If Android, disable "background-attachment: fixed"
     if (mobileAndTabletcheck) {
         $('#splash_berkeley').css('background-attachment', 'scroll');
-        $('#splash_board').css('background-attachment', 'scroll');
+        $('#splash_board').remove();
     }
     
 });
