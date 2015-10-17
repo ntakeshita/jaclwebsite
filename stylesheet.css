@@ -149,7 +149,7 @@ hr {
 /*** splash welcome ***/
 
 #splash_berkeley {
-    background: url("./content/berkeley.jpg");
+    background: url("content/berkeley.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center center;
@@ -199,7 +199,7 @@ hr {
 }
 
 #splash_board {
-    background: url('./content/board-cropped.jpg');
+    background: url('content/board-cropped.jpg');
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
