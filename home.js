@@ -81,11 +81,15 @@ function menuSizing() {
     var windowWidth = $(window).width(),
         menuHeight = $('#menu_bar').innerHeight();
     $('#menu_alt').css('margin-top', menuHeight + 'px');
-    if (windowWidth < 1100) {
+    if (windowWidth < 500) {
+        $('#bjacl').css('top', '20%');
+        $('#bjacl').css('font-size', '180%');
+    } else if (windowWidth < 1100) {
         $('#bjacl').css('top', '20%');
         $('#menu_alt_icon').css('display', 'inline');
         $('#menu').css('display', 'none');
         $('.gallery_txt').css('font-size', '80%');
+        $('#bjacl').css('font-size', '120%');
     } 
     else {
         $('#menu_alt').hide();
@@ -93,5 +97,6 @@ function menuSizing() {
         $('#menu_alt_icon').css('display', 'none');
         $('#menu').css('display', 'inline');
         $('.gallery_txt').css('font-size', '110%');
+        $('#bjacl').css('font-size', '130%');
     }
 }
