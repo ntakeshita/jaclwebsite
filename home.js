@@ -5,7 +5,7 @@ var heightTop = null,
     sticky = null,
     imgPath = null,
     id = null,
-    stellarActivated = false,
+    stellarActivated = false;
 
 
 $(document).ready(function() {
@@ -16,7 +16,7 @@ $(document).ready(function() {
     // If Android, disable "background-attachment: fixed"
     if (mobileAndTabletcheck()) {
         $('#splash_berkeley').css('background-attachment', 'scroll');
-        $('#splash_board').remove();
+        $('#splash_board').css('background-attachment', 'scroll');
     }
     
 });
