@@ -84,7 +84,7 @@ function menuSizing() {
     if (windowWidth < 1100) {
         if (windowWidth < 500) {
             $('#bjacl').css('top', '20%');
-            $('#bjacl').css('font-size', '150%');
+            $('#bjacl').css('font-size', '145%');
         } else {
             $('#bjacl').css('top', '20%');
             $('#bjacl').css('font-size', '120%');
