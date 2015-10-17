@@ -200,12 +200,15 @@ hr {
 
 #splash_board {
     background: url('content/board-cropped.jpg');
+    height: 50vh;
+    width: 100%;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: !important cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #board_instructions {
