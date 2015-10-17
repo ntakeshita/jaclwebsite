@@ -106,10 +106,10 @@ hr {
 #menu_alt_icon {
     position:absolute;
     display: none;
-    font-size: 3vh;
+    font-size: 4vh;
     color: white;
     right: 2%;
-    top: 35%;
+    top: 15px;
 }
 
 #menu_alt {
