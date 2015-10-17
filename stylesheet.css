@@ -8,10 +8,6 @@ body {
     background-color: #E3E3E3;
 }
 
-.block {
-    margin: 0;
-}
-
 section {
     padding: 1%;
 }
@@ -20,69 +16,139 @@ h2 {
     position: relative;
     font-family: 'Poiret One';
     letter-spacing: 2px;
-    font-size: 5vmin;
+    font-size: 175%;
     margin: 2%;
 }
 
 .wording {
     margin: 2%;
     font-family: 'Source Sans Pro';
-    font-size: 3vmin;
+    font-size: 100%;
 }
+
+hr {
+    width: 95vw;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.anchor {
+    visibility: hidden;
+}
+
 
 /*** header content ***/
 
-#logo {
-    position: fixed;
-    z-index: 11;
-    top: 0;
-    left: 0;
-    padding: .5%;
-    height: 6vh;
-    float: left;
-}
-
-#bjacl {
-    position: fixed;
-    z-index: 11;
-    float: left;
-}
-
 #menu_bar {
-    height: 2.5vh;
     font-size: 2vmin;
     position: fixed;
     width: 100%;
-    padding: 1.5% 0;
+    height: 2vh;
+    max-height: 75px;
+    padding: 3vh 0;
     background-color: #800000;
     text-align: right;
     z-index: 10;
 }
 
-.menu {
-    margin-right: 1vw;
-    padding: 3vh .5vw;
-    font-family: 'Raleway';
-    font-size: vh;
-    letter-spacing: .05vw;
+#menu_bar > span {
+    position: absolute;
+    height: 100%;
+    max-height: 75px;
+    min-width: 50%;
+    text-align: left;
+    top: 0;
+    left: 0;
 }
 
-.menu > a {
+#logo {
+    position: relative;
+    z-index: 11;
+    height: 100%;
+    left: 0;
+}
+
+#bjacl {
+    position: absolute;
+    top: 25%;
+    font-family: 'Raleway';
+    font-size: 120%;
+    color: white;
+}
+
+#menu {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 100%;
+}
+
+#menu li {
+    display: inline;
+    vertical-align: center;
+    padding: 3vh 0;
+}
+
+#menu li:hover a {
+    color: gray;
+}
+
+#menu li a {
     text-decoration: none;
     color: white;
-    padding: 1%;
+    font-size: 120%;
+    padding: 2vh 1vw;
+    font-family: 'Raleway';
+}
+
+#menu_alt_icon {
+    position:absolute;
+    display: none;
+    font-size: 3vh;
+    color: white;
+    right: 2%;
+    top: 35%;
+}
+
+#menu_alt {
+    position: absolute;
+    display: none;
+    list-style-type: none;  
+    padding: 0;
+    text-align: left;   
+    background-color: white;
+    width: 100%;
+    top: 0vh;
 }
 
 
-.menu:hover {
-    background-color: #CB7D82;
+#menu_alt li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 200%;
+    font-family: 'Raleway';
+    width: inherit;
+    padding: 1% 1%;
+}
+
+#menu_alt li:hover {
+    background-color:gray;
+}
+
+#menu_alt li {
+    border-bottom: 1px solid gray;
+}
+
+#menu_alt li:last-child{
+    border: none;
 }
 
 /*** splash welcome ***/
 
 #splash_berkeley {
     display: block;
-    background-image: url("content/berkeley.jpg");
+    background: url("content/berkeley.jpg") no-repeat;
     background-size: 100% 100%;
     height: 100vh;
     width: 100%;
@@ -95,20 +161,20 @@ h2 {
     position: absolute;
     max-height: 50vh;
     width: 90%;
-    overflow: hidden;
-    top: 40%;
+    overflow: scroll;
+    top: 30vh;
     margin: 0 2.5%;
     color: white;
     font-family: 'Montserrat';
 }
 
 #welcome {
-    font-size: 10vh;
+    font-size: 6.5vh;
     padding-bottom: 1%;
 }
 
 #welcome_supp {
-    font-size: 5vh;
+    font-size: 3.5vh;
 }
 
 
@@ -121,67 +187,139 @@ h2 {
 
 /*** about ***/
 
-#about {
-    background-color: #993333;
-    color: white;
-}
-
 /*** board ***/
-
 
 #board_header {
     text-align: center;
 }
 
 #splash_board {
+    background: url('content/board-cropped.jpg') 100% no-repeat;
+    margin: 0px;
+    height: 50vh;
     display: block;
-    background-image: url("content/board.png");
-    background-repeat: no-repeat;
-    height: 75vh;
-    width: 100vw;
     background-attachment: fixed;
-}
-
-#board_gallery {
-    margin-left: 6%;
-    padding-bottom: 2%;
+    background-position: center center; 
 }
 
 #board_instructions {
     text-align: center;
 }
 
-.board_pic {
+.gallery_img {
+    display: table-cell;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40vh;
+    text-align: center;
+}
+
+.gallery_txt {
     position: relative;
-    width: 22%;
-    padding: 1%;
-    z-index: 1;
-    float: left;
-}
-
-/*** membership ***/
-
-#membership_header {
-    clear: both;
-}
-
-#membership_wording {
-    text-align: center;
-}
-
-#membership_button {
-    text-align: center;
-    margin: 1% 0;
-}
-
-#membership_link {
-    text-decoration: None;
-    text-align: center;
-    width: 5%;
-    padding: 1% 3%;
-    background-color: #800000;
-    font-family: 'Raleway';
     color: white;
-    font-size: 175%;
-    background-color: #800000;
+    visibility: hidden;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    font-size: 120%; 
+    font-family: 'Source Sans Pro';
+}
+
+.gallery_row {
+    margin-left: 1vmin;
+    display: table;
+    width: 100%;
+    border-spacing: 2vmin;
+    table-layout: fixed;
+}
+
+
+/* Note: Multiple IDs used to make compatible with Javascript darkening
+of photos on hover. */
+
+#michael {
+    background-image: url('./content/board-gallery/michael.JPG');
+}
+
+#paul {
+    background-image: url('./content/board-gallery/paul.JPG');
+}
+
+#gordon {
+    background-image: url('./content/board-gallery/gordon.JPG');
+}
+
+#tak {
+    background-image: url('./content/board-gallery/tak.JPG')
+}
+
+#carolyn {
+    background-image: url('./content/board-gallery/carolyn.JPG');
+}
+
+#jim {
+    background-image: url('./content/board-gallery/jim.JPG')
+}
+
+#mark {
+    background-image: url('./content/board-gallery/mark.JPG');
+}
+
+#howard {
+    background-image: url('./content/board-gallery/howard.JPG');
+}
+
+#vera {
+    background-image: url('./content/board-gallery/vera.JPG')
+}
+
+#neal {
+    background-image: url('./content/board-gallery/neal.JPG');
+}
+
+#al {
+    background-image: url('./content/board-gallery/al.JPG');
+}
+
+#ron {
+    background-image: url('./content/board-gallery/ron.JPG')
+}
+
+/*** friends ***/
+
+#jccnc {
+    background-image: url('./content/jcccnc.jpg')
+}
+
+
+/*** contact ***/
+
+.icon {
+    margin-right: 3vw;
+}
+
+.icon:hover {
+    color: #A64D4D;
+}
+
+.fa-facebook {
+    color: #800000;
+}
+
+.fa-twitter {
+    color: #800000;
+}
+
+.fa-youtube-play {
+    color: #800000;
+}
+
+.fa-dropbox {
+    color: #800000;
+}
+
+/* Footer */
+.footer {
+    font-size: 75%;
 }
