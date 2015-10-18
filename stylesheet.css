@@ -17,11 +17,11 @@ h2, h4 {
     position: relative;
     font-family: 'Poiret One';
     letter-spacing: 2px;
-    margin: 2%;
 }
 
 h2 {
     font-size: 175%;
+    margin: 2%;
 }
 
 .wording {
@@ -308,13 +308,12 @@ of photos on hover. */
     width: 100%;
     cellspacing: 0; 
     border: 0;
-    text-align: center;
     padding-bottom: 4vh;
+    text-align: center;
 }
 
 #columns > td {
     max-width: 33%; 
-    text-align: center;
     vertical-align: middle;
 }
 
@@ -338,6 +337,28 @@ of photos on hover. */
 
 
 /* Footer */
+
+#friends {
+    table-layout: fixed;
+    width: 90%;
+    cellspacing: 0; 
+    border: 0;
+    text-align: center;
+}
+
+#friends td {
+    width: 50%;
+}
+
+#friends ul {
+    list-style-type: none;
+    margin-left: 15%;
+}
+
+#friends li {
+    margin-bottom: 2vh;
+}
+
 .footer {
     font-size: 75%;
     text-align: center;
