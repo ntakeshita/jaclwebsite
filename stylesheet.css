@@ -12,12 +12,16 @@ section {
     padding: 1%;
 }
 
-h2 {
+h2, h4 {
+    text-align: center;
     position: relative;
     font-family: 'Poiret One';
     letter-spacing: 2px;
-    font-size: 175%;
     margin: 2%;
+}
+
+h2 {
+    font-size: 175%;
 }
 
 .wording {
@@ -57,7 +61,7 @@ hr {
     position: absolute;
     height: 100%;
     max-height: 75px;
-    min-width: 60%;
+    min-width: 50%;
     text-align: left;
     top: 0;
     left: 0;
@@ -190,8 +194,6 @@ hr {
     padding: 1%;
 }
 
-/*** about ***/
-
 /*** board ***/
 
 #board_header {
@@ -295,44 +297,49 @@ of photos on hover. */
     background-image: url('./content/board-gallery/ron.JPG')
 }
 
-/*** friends ***/
+/*** resources ***/
 
-#jccnc {
-    background-image: url('./content/jcccnc.jpg')
-}
-
-
-/*** contact ***/
-
-#icons {
+#resource_header {
     text-align: center;
 }
+
+#columns {
+    table-layout: fixed;
+    width: 100%;
+    cellspacing: 0; 
+    border: 0;
+    text-align: center;
+    padding-bottom: 4vh;
+}
+
+#columns > td {
+    max-width: 33%; 
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*** contact & links ***/
+
+.icons {
+    text-align: center;
+}
+
+.icons a:not(:last-child) {
+    margin-right: 3vw;
+}
+
 .icon {
-    margin-right: 5vw;
+    color: #800000;
 }
 
 .icon:hover {
     color: #A64D4D;
 }
 
-.fa-facebook {
-    color: #800000;
-}
-
-.fa-twitter {
-    color: #800000;
-}
-
-.fa-youtube-play {
-    color: #800000;
-}
-
-.fa-dropbox {
-    color: #800000;
-}
 
 /* Footer */
 .footer {
     font-size: 75%;
     text-align: center;
 }
+

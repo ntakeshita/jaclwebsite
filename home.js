@@ -84,10 +84,12 @@ function menuSizing() {
     if (windowWidth < 1100) {
         if (windowWidth < 500) {
             $('#bjacl').css('top', '20%');
+            $('#columns').css('display', 'block');
             $('#bjacl').css('font-size', '145%');
         } else {
             $('#bjacl').css('top', '20%');
             $('#bjacl').css('font-size', '120%');
+            $('#columns').css('display', 'table');
         }
         $('#menu_alt_icon').css('display', 'inline');
         $('#menu').css('display', 'none');
@@ -100,5 +102,6 @@ function menuSizing() {
         $('#menu').css('display', 'inline');
         $('.gallery_txt').css('font-size', '110%');
         $('#bjacl').css('font-size', '130%');
+        $('#columns').css('display', 'table');
     }
 }
