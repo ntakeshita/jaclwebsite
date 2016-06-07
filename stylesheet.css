@@ -194,12 +194,14 @@ hr {
 }
 
 #splash_board {
-    background: url('content/InstallLuncheon2016.jpg') 100% no-repeat;
+    background: url('content/InstallLuncheon2016.jpg') no-repeat;
+    background-size: 100% 150%;
     margin: 0px;
     height: 50vh;
+    width: 100%;
     display: block;
     background-attachment: fixed;
-    background-position: center center; 
+    background-position: top center; 
 }
 
 #board_instructions {
